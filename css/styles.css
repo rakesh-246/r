@@ -61,6 +61,38 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+/* Flex Container Styles */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #bbdefb;
+    height: auto; /* Adjust height as needed */
+    padding: 15px;
+    gap: 10px; /* Adjust gap between items */
+}
+
+.flex-container > div {
+    background: #ffecb3;
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+    padding: 8px;
+    flex: 1 1 calc(33.33% - 20px); /* Adjusts to fit three items per row with gaps */
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+
+/* Example styles to demonstrate responsiveness */
+@media (max-width: 768px) {
+    .flex-container > div {
+        flex: 1 1 calc(50% - 20px); /* Adjusts to fit two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-container > div {
+        flex: 1 1 100%; /* Adjusts to fit one item per row on very small screens */
+    }
+}
 
 /* Skills styles */
 .skills-container {
