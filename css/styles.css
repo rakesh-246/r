@@ -147,11 +147,6 @@ footer a:hover {
     animation: bg-pan-left 8s both;
 }
 
-/**
- * ----------------------------------------
- * animation bg-pan-left
- * ----------------------------------------
- */
 @-webkit-keyframes bg-pan-left {
     0% {
         background-position: 100% 50%;
