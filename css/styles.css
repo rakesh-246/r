@@ -76,7 +76,7 @@ section {
     color: #fff;
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
-    flex: 1 1 calc(50% - 20px); /* Adjusts to fit two items per row with a gap */
+    flex: 1 1 calc(33.33% - 20px); /* Adjusts to fit three items per row with a gap */
     margin-bottom: 20px;
     text-align: left;
 }
