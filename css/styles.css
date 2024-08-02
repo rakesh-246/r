@@ -46,18 +46,12 @@ header h2 {
     font-size: 1.5em;
 }
 
-/* About section styles */
-#summary {
-    display: flex;
-    justify-content: center;
+/* Section styles */
+section {
+    margin: 20px 0;
 }
 
-#summary .container {
-    max-width: 800px;
-    text-align: center;
-}
-
-#summary p {
+.about p, .skills .skill-category, .articles .article {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
@@ -68,8 +62,8 @@ header h2 {
     transform: translateY(0);
 }
 
-/* Skills section styles */
-.skills-container {
+/* Skills styles */
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -85,14 +79,6 @@ header h2 {
     flex: 1 1 calc(33.33% - 20px); /* Adjusts to fit three items per row with a gap */
     margin-bottom: 20px;
     text-align: left;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.skill-category.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .skill-category:hover {
@@ -100,7 +86,7 @@ header h2 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.skill-category h3 {
+.skill-category h4 {
     margin-bottom: 10px;
 }
 
@@ -113,54 +99,37 @@ header h2 {
     margin-bottom: 5px;
 }
 
-/* Articles section styles */
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.article {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+/* Article styles */
+.articles .article {
+    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ddd;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
-    flex: 1 1 calc(33.33% - 20px); /* Adjusts to fit three items per row with a gap */
-    margin-bottom: 20px;
-    text-align: left;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
 }
 
-.article.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.article:hover {
+.articles .article:hover {
     transform: scale(1.02);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.article h4 {
+.articles .article h4 {
     margin: 0 0 10px 0;
     color: #333;
 }
 
-.article p {
+.articles .article p {
     margin: 5px 0;
 }
 
-.article a {
+.articles .article a {
     color: #007BFF;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.article a:hover {
+.articles .article a:hover {
     text-decoration: underline;
     color: #0056b3;
 }
