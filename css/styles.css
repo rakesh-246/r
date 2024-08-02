@@ -1,66 +1,128 @@
-/* General Reset */
-* {
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Container */
+/* Container styles */
 .container {
     width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Header */
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
 header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #333;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+}
+
+.about p, .skills ul, .articles .article {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills styles */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background: #007BFF;
+    margin: 5px 0;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Article styles */
+.articles .article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.articles .article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.articles .article h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.articles .article p {
+    margin: 5px 0;
+}
+
+.articles .article a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.articles .article a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
     background: #333;
     color: #fff;
-    padding: 20px 0;
-    position: relative;
-    z-index: 1;
+    border-radius: 0 0 10px 10px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 {
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
+footer a {
+    color: #007BFF;
     text-decoration: none;
-    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
-.hero {
-    background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
+footer a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
-
-.hero h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.button {
