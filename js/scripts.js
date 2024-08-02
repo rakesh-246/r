@@ -27,4 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Add some JavaScript for animations on hover
+    const skillCategories = document.querySelectorAll('.skill-category');
+    skillCategories.forEach(skillCategory => {
+        skillCategory.addEventListener('mouseover', () => {
+            skillCategory.style.transform = 'scale(1.05)';
+            skillCategory.style.transition = 'transform 0.3s';
+        });
+        skillCategory.addEventListener('mouseout', () => {
+            skillCategory.style.transform = 'scale(1)';
+        });
+    });
 });
