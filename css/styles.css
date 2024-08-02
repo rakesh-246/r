@@ -63,7 +63,7 @@ section {
 }
 
 /* Skills styles */
-.skills {
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
