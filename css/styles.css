@@ -7,8 +7,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
-  color: #333;
+  /*background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
+  */color: #333;
   background-image: url("backgorung.png");
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -20,7 +20,8 @@ body {
   width: 80%;
   margin: 50px auto;
   padding: 20px;
-  background: rgba(179, 247, 170, 0.8);
+  /*background: rgba(179, 247, 170, 0.8);*/
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent overlay */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
