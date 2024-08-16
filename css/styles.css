@@ -31,7 +31,7 @@ body {
 
 /* Header styles */
 header {
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
     background: linear-gradient(135deg, #ffadb4, #f89ca4);
     color: #fff;
