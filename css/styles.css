@@ -33,11 +33,11 @@ body {
 header {
     text-align: left;
     padding-bottom: 20px;
-    background: linear-gradient(135deg, #ffadb4, #f89ca4);
+    background: linear-gradient(135deg, #eee4e5, #f1ebec);
     color: #fff;
     border-radius: 10px 10px 0 0;
     padding: 20px;
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     animation: bg-pan-left 8s infinite;
 }
 
