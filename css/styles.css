@@ -9,7 +9,7 @@ body {
   padding: 0;
   /*background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
   */color: #333;
-  background-image: url("backgorung.png");
+  background-image: url("background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
