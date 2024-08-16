@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Unispace&display=swap');
+
+
 /* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Unispace', monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
     color: #333;
+    background-image: url("backgorung.webp");
+
 }
 
 /* Container styles */
@@ -28,7 +33,7 @@ body {
 header {
     text-align: center;
     padding-bottom: 20px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #ffadb4, #f89ca4);
     color: #fff;
     border-radius: 10px 10px 0 0;
     padding: 20px;
@@ -61,44 +66,85 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+/* Import Unispace font */
 
-/* Skills styles */
-.skills {
+/* Skills Section */
+#skills {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    font-family: 'Unispace', monospace;
+}
+
+#skills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .skill-category {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    padding: 10px;
-    color: #fff;
-    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 40px); /* Adjust width and margin */
+    min-width: 250px; /* Minimum width for smaller screens */
     transition: transform 0.3s, box-shadow 0.3s;
-    flex: 1 1 calc(33.33% - 20px); /* Adjusts to fit three items per row with a gap */
-    margin-bottom: 20px;
-    text-align: left;
 }
 
 .skill-category:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.skill-category h4 {
-    margin-bottom: 10px;
+.skill-category h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .skill-category ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
 
 .skill-category ul li {
-    margin-bottom: 5px;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
 }
 
+.skill-category ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #c0c8eb;
+}
+
+@media (max-width: 768px) {
+    .skill-category {
+        flex: 1 1 100%;
+    }
+}
+
+/*
 /* Article styles */
 .articles .article {
     margin-bottom: 20px;
@@ -132,8 +178,7 @@ section {
 .articles .article a:hover {
     text-decoration: underline;
     color: #0056b3;
-}
-
+}*/
 /* Footer styles */
 footer {
     text-align: center;
@@ -159,6 +204,75 @@ footer a:hover {
     -webkit-animation: bg-pan-left 8s both;
     animation: bg-pan-left 8s both;
 }
+
+/* Blog Section */
+#blog {
+    background-color: #f0f4f8;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+#blog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-title {
+    font-size: 1.8em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-title:hover {
+    color: #667eea;
+}
+
+.blog-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.blog-post .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.blog-post .button:hover {
+    background-color: #4951d6;
+}
+
 
 @-webkit-keyframes bg-pan-left {
     0% {

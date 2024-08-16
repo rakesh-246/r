@@ -39,5 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
             skillCategory.style.transform = 'scale(1)';
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const blogPosts = document.querySelectorAll('.blog-post');
+    
+        blogPosts.forEach(post => {
+            post.addEventListener('mouseover', () => {
+                post.style.transform = 'scale(1.05)';
+                post.style.transition = 'transform 0.3s';
+            });
+    
+            post.addEventListener('mouseout', () => {
+                post.style.transform = 'scale(1)';
+            });
+        });
+    });
+    
 });
 
