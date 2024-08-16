@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   /*background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
-  */color: #333;
+  */color: #000000;
   background-image: url("background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -37,7 +37,7 @@ header {
   text-align: left; /* Align all content inside header to left */
   padding-bottom: 20px;
   /*background: linear-gradient(135deg, #bee0ee, #f1ebec);*/
-  color: #fff;
+  color: #000000; /*color: #333; */
   border-radius: 10px 10px 0 0;
   padding: 20px;
   background-size: 100% 100%;
@@ -103,7 +103,7 @@ section {
 }
 
 .skill-category {
-    background-color: #fff;
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -130,14 +130,14 @@ section {
 
 .skill-category ul li {
     font-size: 1em;
-    color: #666;
+    color: #000000;  /*  color: #666; */
     margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
 }
 
 .skill-category ul li:before {
-    content: "•";
+    content: "*";
     position: absolute;
     left: 0;
     color: #c0c8eb;
@@ -212,9 +212,9 @@ footer a:hover {
 
 /* Blog Section */
 #blog {
-    background-color: #f0f4f8;
+    /*background-color: #f0f4f8; */
     padding: 50px 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Unispace', monospace;
 }
 
 #blog .container {
