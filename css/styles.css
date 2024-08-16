@@ -9,7 +9,11 @@ body {
   padding: 0;
   background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
   color: #333;
-  background-image: url("backgorung.png");}
+  background-image: url("backgorung.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
 
 /* Container styles */
 .container {
@@ -37,6 +41,7 @@ header {
   padding: 20px;
   background-size: 100% 100%;
   animation: bg-pan-left 8s infinite;
+  
 }
 
 header h1 {
