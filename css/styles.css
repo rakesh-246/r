@@ -1,94 +1,93 @@
+/* Import Unispace font */
 @import url('https://fonts.googleapis.com/css2?family=Unispace&display=swap');
-
 
 /* Global styles */
 body {
-    font-family: 'Unispace', monospace;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
-    color: #333;
-    background-image: url("backgorung.webp");
-
-}
+  font-family: 'Unispace', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #b2ff9a60 0%, #d3fac4 99%, #b2ff9a60 100%);
+  color: #333;
+  background-image: url("backgorung.png");}
 
 /* Container styles */
 .container {
-    width: 80%;
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(179, 247, 170, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Header styles */
 header {
-    text-align: left;
-    padding-bottom: 20px;
-    background: linear-gradient(135deg, #eee4e5, #f1ebec);
-    color: #fff;
-    border-radius: 10px 10px 0 0;
-    padding: 20px;
-    background-size: 100% 100%;
-    animation: bg-pan-left 8s infinite;
+  text-align: left; /* Align all content inside header to left */
+  padding-bottom: 20px;
+  /*background: linear-gradient(135deg, #bee0ee, #f1ebec);*/
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  background-size: 100% 100%;
+  animation: bg-pan-left 8s infinite;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3em;
+  margin: 0;
+  font-size: 3em;
 }
 
 header h2 {
-    margin: 0;
-    font-size: 1.5em;
+  margin: 0;
+  font-size: 1.5em;
 }
 
 /* Section styles */
 section {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .about p, .skills .skill-category, .articles .article {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-/* Import Unispace font */
 
 /* Skills Section */
 #skills {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-    font-family: 'Unispace', monospace;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  font-family: 'Unispace', monospace;
 }
 
 #skills .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #skills h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
+/* Rest of the CSS remains unchanged */
 
 .skills-container {
     display: flex;
