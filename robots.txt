@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://rakesh-246.github.io/r/sitemap.xml

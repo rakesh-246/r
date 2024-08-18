@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>r</title>
+    <link href="https://rakesh-246.github.io/r/feed.xml" rel="self" />
+    <link href="https://rakesh-246.github.io/r" />
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <author>
+        <name>Rakesh P</name>
+    </author>
+    <id>https://rakesh-246.github.io/r</id>
+
+</feed>
